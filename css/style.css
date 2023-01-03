@@ -19,16 +19,16 @@ font-family: "Roboto", sans-serif;
 font-weight: 400;
 color: var(--black);
 }
-/* ------------------------------- INDEX START--------------------- */
+/* ------------------------------- HEADER START--------------------- */
 .container {
 width: 1200px; }
 
-.container-flex {
+.container--header {
 display: flex;
 align-items: center;
 justify-content: center; }
-/* ----------------------- HEADER START------------------ */
-.logo-main {
+
+.header__logo {
 font-family: "Raleway";
 font-style: normal;
 font-weight: 700;
@@ -38,10 +38,10 @@ color: inherit;
 margin-right: 93px;
 }
 
-.logo-primary {
+.header__logo--color {
 color: var(--light-blue);}
 
-.a-main {
+.header--text-decoration {
 text-decoration: none;}
 
 .ul-main {
