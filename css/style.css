@@ -43,8 +43,7 @@ text-decoration: none;
 color: var(--light-blue);}
 
 
-.ul-main {
-list-style-type: none;}
+
 
 .navigation{
 display: flex;
@@ -53,12 +52,19 @@ padding-bottom: 32px;
 text-decoration: none;
 list-style-type: none;}
 
+.navigation__links{
+display:flex;
+list-style-type: none;
+}
+
 .li-flex {
 margin-right: 32px;}
 
 .ul-flex {
 display: flex;}
 
+.ul-main {
+list-style-type: none;}
 .links {
 font-style: normal;
 font-weight: 500;
