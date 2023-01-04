@@ -123,11 +123,11 @@ fill: var(--grey);
 margin-right:10px;}
 
 /* ------------------------------- HEADER END--------------------- */
-
-.section-main {
+/* ------------------------------- HERO START--------------------- */
+.hero {
 display: flex;
 padding-top: 94px;
-padding-bottom: 94px;
+margin-bottom: 94px;
 width:1600px;
 background-image:linear-gradient(#2F303A66, #2F303A66),
 url('../images/Img.jpg');
@@ -135,7 +135,33 @@ background-color: var(--main-background-color);
 margin:0 auto;  
 color: var(--white);}
 
-.container-main:{
+.hero__title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+padding-left: 252px;
+padding-right: 252px;
+padding-top: 104px;
+text-align: center;
+margin-bottom: 30px;
+text-transform: uppercase;}
+
+.hero__button {
+cursor: pointer;
+font-family: inherit;
+font-weight: 700;
+padding: 10px 41px 10px 42px;
+margin-bottom: 104px;
+left: 700px;
+top: 430px;
+color: var(--white);
+background:var(--light-blue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border:none;}
+
+.container-main{
 width:1200px;
 display: flex;
 flex-direction: column;
@@ -143,6 +169,125 @@ justify-content: center;
 align-items: center
 }
 
+
+/* ------------------------------- HERO END--------------------- */
+
+/* ------------------------------- LOREM START--------------------- */
+
+.lorem{
+ padding-top: 94px;
+padding-bottom: 94px;}
+
+.lorem__links{ 
+display:flex;
+list-style-type:none;
+gap:30px;}
+
+.lorem__icon{
+padding: 25px 102.34px;
+margin-bottom: 30px;
+background:var(--lorem-icon-background);
+border-radius: 4px;}
+
+.lorem__title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+padding-bottom: 10px;}
+
+.lorem__subtitle {
+font-size: 14px;
+line-height: 1.71;
+color: var(--grey);
+letter-spacing: 0.03em;}
+
+/* ------------------------------- LOREM END--------------------- */
+
+/* ------------------------------- JOB START--------------------- */
+
+.container-job{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:1200px;}
+
+.job{
+display:flex;
+padding-bottom:94px;
+}
+
+.job__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+padding-bottom: 50px;}
+
+.job__links{
+display:flex;
+list-style-type:none;
+gap:30px;
+}
+
+.job__box{
+position:relative;
+display: flex;}
+
+.job__subtitle{
+font-family: "Roboto";
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height:1,14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white);
+text-align: center;
+background-color: #2F303ACC;
+position:absolute;
+padding-top:27px;
+padding-bottom:27px;
+width:370px;
+left:0;
+bottom:0}
+ 
+/* ------------------------------- JOB END--------------------- */
+
+/* ------------------------------- TEAM START--------------------- */
+
+.container-team{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:1200px;}
+
+.team {
+display: flex;
+background:var(--lorem-icon-background);
+padding-top: 94px;
+padding-bottom:94px}  
+  
+.team__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+padding-bottom: 50px;}
+
+.team__links{
+list-style-type: none;
+display:flex;
+gap:30px;}
+
+.team__img{
+background: var(--white);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+ 1px 4px 6px rgba(0, 0, 0, 0.16); 
+border-radius: 0px 0px 4px 4px;
+text-align: center;}
+    
 
 
 
@@ -229,19 +374,7 @@ url('../images/Img.jpg');
 margin:0 auto;  
 color: var(--white);}
 
-.button-main {
-cursor: pointer;
-font-family: inherit;
-font-weight: 700;
-padding: 10px 41px 10px 42px;
-margin-bottom: 104px;
-left: 700px;
-top: 430px;
-color: var(--white);
-background:var(--light-blue);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border:none;}
+
 
 .section {
 padding-top: 94px;
@@ -250,14 +383,9 @@ padding-bottom: 94px;}
 
 /* ----------- LOREM SECTION START-------- */
 
-.atuts-icon{
-fill:var(--black);}
 
-.lorem-icon{
-padding: 25px 102.34px;
-margin-bottom: 30px;
-background:var(--lorem-icon-background);
-border-radius: 4px;}
+
+
 
 .h3-main {
 font-weight: 700;
@@ -276,40 +404,14 @@ letter-spacing: 0.03em;}
 /* ----------- LOREM SECTION END-------- */
 
 /* ----------- OUR WORK SECTION START-------- */
-.h2-main {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-padding-bottom: 50px;}
+
 
 .section-about {
 display: flex;}
-  
-.li-about-us {
-margin-right: 30px;}
 
-.about-us-text{
-font-family: "Roboto";
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height:1,14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--white);
-text-align: center;
-background-color: #2F303ACC;
-position:absolute;
-padding-top:27px;
-padding-bottom:27px;
-width:370px;
-left:0;
-bottom:0}
 
-.about-us-box{
-position:relative;
-display: flex;}
+
+
 
 /* ----------- OUR WORK SECTION END-------- */
 
@@ -339,12 +441,6 @@ padding-top:16px;}
 display: flex;
 background:var(--lorem-icon-background);}
   
-.figure-team {
-background: var(--white);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16); 
-border-radius: 0px 0px 4px 4px;
-text-align: center;}
 
 .li-team {gap:30px;}
 
