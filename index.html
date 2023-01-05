@@ -406,50 +406,50 @@
              <address class="address">
           <ul class="address__contact-list">
             <li>
-              <p>
+              <p class="address__contact-list--city">
                 m. Warszawa, Aleje Jerozolimskie 21
               </p>
             </li>
-            <li>
-              <a class="footer__address a-main links-footer" href="mailto:info@devstudio.com"
+            <li class="address__item">
+              <a class="address__links" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="footer__address a-main links-footer" href="tel:48111111111"
+            <li class="address__item">
+              <a class="address__links" href="tel:48111111111"
                 >+48 111 111 111</a
               >
             </li>
           </ul>
         </address>
       </div>
-        <div class="footer__media">
-          <h3 style="margin-bottom:20px" class="title-footer"> DOŁĄCZ DO  NAS </h3>
-          <ul class="ul-main ul-flex ul-footer">
+        <div class="media">
+          <h3 class="media__title"> DOŁĄCZ DO  NAS </h3>
+          <ul class="media__list">
             <li>
-              <a class="a-footer" href="#">
-                <svg width="20" height="20" class="footer-icon">
+              <a class="media__icon-group" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="a-footer" href="#">
-                <svg width="20" height="20"class="footer-icon">
+              <a class="media__icon-group" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="a-footer" href="#">
-                <svg width="20" height="20"class="footer-icon">
+              <a class="media__icon-group" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="a-footer" href="#">
-                <svg width="20" height="20"class="footer-icon">
+              <a class="media__icon-group" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
@@ -460,66 +460,69 @@
         
           
             <form>
-              <div class="footer__form">
-              <div class="div-news">
-              <label for="email" class="title-footer label-news">ZAPISZ SIE DO NEWSLETTERA</label>
-            <input class="input-footer" type="email" name="email"id="email" placeholder="E-mail">
+              <div class="form">
+              <div class="form__input">
+              <label for="email" class="form__label">ZAPISZ SIE DO NEWSLETTERA</label>
+            <input class="form__input-details" type="email" name="email"id="email" placeholder="E-mail">
             </div>
-          <div class="div-button-footer">
-            <button class ="button-footer" type="submit">Zapisz się <svg width="24" height="24" class="footer-icon-news">
+          <div>
+            <button class ="form__button" type="submit">Zapisz się <svg width="24" height="24" class="form__icon">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg></button>   </div>     </form>
         </div>
-    
-        <div class="overlay is-hidden" data-modal>
+     <!-- FOOTER SECTION END-->
+      <!-- MODAL SECTION START-->
+        <div class="overlay overlay__is-hidden" data-modal>
           <div class="modal">
-          <p class="modal-title"> Zostaw swoje dane w formularzu poniżej</p>
+          <p class="modal__title"> Zostaw swoje dane w formularzu poniżej</p>
             <form>
-              <div class="field">
-              <label for="name"> Imię</label>
-              <input type="name" name="name" id="name"/><svg  width="18px" height="18px">
+              <div class="modal__field">
+              <label class="modal__label" for="name"> Imię</label>
+              <input class="modal__input" type="name" name="name" id="name"/><svg  width="18px" height="18px">
                 <use  href="./images/icons.svg#icon-person-black-18dp-1
                 "></use></svg>
               </div>
 
-              <div class="field">
-                <label for="phone"> Telefon</label>
-                <input type="phone" name="phone" id="phone"/>
+              <div class="modal__field">
+                <label class="modal__label" for="phone"> Telefon</label>
+                <input class="modal__input" type="phone" name="phone" id="phone"/>
                 <svg  width="18px" height="18px">
                   <use  href="./images/icons.svg#icon-phone-black-18dp-1
                   "></use></svg>
               
               </div>
 
-                <div class="field">
-              <label for="email"> Email</label>
-              <input type="email" name="email" id="email"/>
+                <div class="modal__field">
+              <label class="modal__label" for="email"> Email</label>
+              <input class="modal__input" type="email" name="email" id="email"/>
               <svg  width="18px" height="18px">
                 <use  href="./images/icons.svg#icon-email-black-18dp-1
                 "></use></svg>
               </div>
             
                 
-                <div class="field">
-                  <label for="comment"> Komentarz</label>
-                  <textarea type="comment" name="comment" id="comment"rows='5' placeholder="Wprowadź tekst"></textarea>
+                <div class="modal__field">
+                  <label class="modal__label" for="comment"> Komentarz</label>
+                  <textarea class="modal__textarea" type="comment" name="comment" id="comment"rows='5' placeholder="Wprowadź tekst"></textarea>
 
                   </div>
                   
 
-                    <label class="field-checkbox" > <input type="checkbox" name="check "/><svg  width="16px" height="15px">
-                      <use  href="./images/icons.svg#icon-icon-check
-                      "></use></svg>
-                      Oświadczam iż akceptuję <span class="span-checkbox"> Regulamin</span> i <span class="span-checkbox">Politykę Prywatności.</span></label>
-              <button type="submit">Wyślij</button>
-            </form>
-            <button type="button" class="close-btn" data-modal-close>X</button>
-          </div>
-        </div>
-      
-    </footer>
+                  <label class="modal__checkbox"> <input class="modal__checkbox-input" type="checkbox" name="check "/><svg  width="16px" height="15px">
+                    <use  href="./images/icons.svg#icon-icon-check
+                    "></use></svg>
+                    Oświadczam iż akceptuję <span class="modal__span"> Regulamin</span> i <span class="modal__span">Politykę Prywatności.</span></label>
+            <button class="modal__button" type="submit">Wyślij</button>
 
-    <!-- FOOTER SECTION END-->
+            
+          </form>
+          <button type="button" class="close-btn" data-modal-close>X</button>
+        </div>
+      </div>
+    
+  </footer>
+
+    <!-- MODAL SECTION END-->
     <script src="./js/modal.js"></script>
   </body>
 </html>
