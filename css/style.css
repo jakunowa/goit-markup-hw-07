@@ -93,14 +93,14 @@ display: block;
 position:absolute;
 bottom:-32px; }
 
-.header-contact{
+.header__contact{
 display: flex;
 list-style-type: none;
 margin-left: 371px;
 gap:32px;
 }
 
-.header-contact__links{
+.header__contact-links{
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -111,14 +111,14 @@ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 text-decoration: none;} 
 
 
-.header-contact__links:hover svg,
-.header-contact__links:focus svg{ fill:var(--light-blue);} 
+.header__contact-links:hover svg,
+.header__contact-links:focus svg{ fill:var(--light-blue);} 
 
-.header-contact__links:focus,
-.header-contact__links:hover {
+.header__contact-links:focus,
+.header__contact-links:hover {
 color: var(--light-blue);}
 
-.header-contact__icon{vertical-align: middle; 
+.header__contact-icon{vertical-align: middle; 
 fill: var(--grey);
 margin-right:10px;}
 
@@ -161,7 +161,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border:none;}
 
-.container-main{
+.container__main{
 width:1200px;
 display: flex;
 flex-direction: column;
@@ -175,7 +175,7 @@ align-items: center
 /* ------------------------------- LOREM START--------------------- */
 
 .lorem{
- padding-top: 94px;
+padding-top: 94px;
 padding-bottom: 94px;}
 
 .lorem__links{ 
@@ -206,7 +206,7 @@ letter-spacing: 0.03em;}
 
 /* ------------------------------- JOB START--------------------- */
 
-.container-job{
+.container__job{
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -257,7 +257,7 @@ bottom:0}
 
 /* ------------------------------- TEAM START--------------------- */
 
-.container-team{
+.container__team{
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -332,7 +332,7 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 /* ------------------------------- CLIENTS START--------------------- */
 
-.container-clients{
+.container__clients{
 width:1200px;
 display: flex;;
 justify-content: center;
@@ -376,7 +376,7 @@ transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 /* ------------------------------- FOOTER START--------------------- */
 
 
-.container-footer{
+.container__footer{
 display: flex;
 width:1200px;}
 
@@ -700,7 +700,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 padding-top: 94px;
 padding-bottom: 94px;}
 
-.container-buttons{
+.container__portfolio{
 width:1200px;
 display: flex;
 align-items: center;
