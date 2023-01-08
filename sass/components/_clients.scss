@@ -1,6 +1,6 @@
 .clients{
 padding-top: 94px;
-padding-bottom: 94px;}
+padding-bottom: 94px;
     
 &__title{
 font-weight: 700;
@@ -28,4 +28,4 @@ cursor:pointer;}
 &__logo:focus svg{
  fill:$light-blue;
  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-    
+}
